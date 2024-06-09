@@ -81,6 +81,23 @@ namespace HelloWorldCSharp
             Console.WriteLine(Convert.ToString(typeConversionBool));
 
             Console.WriteLine();
+
+            //The below code demonstrates some examples of getting user input into the console
+            Console.WriteLine("Enter username:");
+            string exampleUserName = Console.ReadLine();
+            Console.WriteLine("Example Username is: " + exampleUserName);
+
+            Console.WriteLine();
+
+            //Data read from console.readline is formatted as a string, so needs to be converted if required
+            Console.WriteLine("Please enter an integer: ");
+            int userInputInt = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("The integer you entered is: " + userInputInt);
+
+            Console.WriteLine();
+
+
+
         }
     }
 }

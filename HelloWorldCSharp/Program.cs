@@ -126,6 +126,43 @@ namespace HelloWorldCSharp
             Console.WriteLine(Math.Sqrt(81)); //Calculates the square root
             Console.WriteLine(Math.Abs(-2.2)); //Returns the absolute (positive) value of the input
             Console.WriteLine(Math.Round(8.27)); //Round the input to the nearest integer
+
+            Console.WriteLine();
+
+            //Below are some more eamples of variable manipulation
+            string exampleTxt = "Hello World";
+            Console.WriteLine("The length of this string is: " + exampleTxt.Length);
+            Console.WriteLine(exampleTxt.ToUpper());
+            Console.WriteLine(exampleTxt.ToLower());
+
+            //The below code uses interpolation to substitute values into the string
+            string firstName = "John";
+            string lastName = "Doe";
+            Console.WriteLine($"My full name is: {firstName} {lastName}");
+
+            Console.WriteLine();
+
+            //The below code demonstrates the accessing of characters in a string as an index
+            Console.WriteLine(exampleTxt[3]);
+            Console.WriteLine(exampleTxt.IndexOf("o"));
+
+            //This following code goes into a little more detail as to the potential methodology
+            string fullName = firstName + " " + lastName;
+            int charPos = fullName.IndexOf("D");
+            Console.WriteLine(fullName.Substring(charPos));
+
+            Console.WriteLine();
+
+            //C# also uses backslash as an escape character
+            Console.WriteLine("This is an example of using an \"escape\" character in a string");
+            Console.WriteLine("It\'s possible this could be another example");
+            /* Other useful escape characters are:
+             * \n (New line)
+             * \t (Tab)
+             * \b (Backspace)
+             * */
+
+
         }
     }
 }

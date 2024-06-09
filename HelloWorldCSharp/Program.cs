@@ -118,6 +118,14 @@ namespace HelloWorldCSharp
              * '<<='
              * */
 
+            Console.WriteLine();
+
+            //The following code demonstrates some uses of the 'Math' method
+            Console.WriteLine(Math.Max(5, 7)); //Finds the highest value
+            Console.WriteLine(Math.Min(8, 12)); //Finds the lowest value
+            Console.WriteLine(Math.Sqrt(81)); //Calculates the square root
+            Console.WriteLine(Math.Abs(-2.2)); //Returns the absolute (positive) value of the input
+            Console.WriteLine(Math.Round(8.27)); //Round the input to the nearest integer
         }
     }
 }

@@ -162,7 +162,50 @@ namespace HelloWorldCSharp
              * \b (Backspace)
              * */
 
+            //The below code is an example of an if statement
+            Console.WriteLine("Please enter your age:");
+            int myAge = Convert.ToInt32(Console.ReadLine());
+            int votingAge = 18;
 
+            if (myAge > votingAge)
+            {
+                Console.WriteLine("You are old enough to vote! Congrats! You have been able to vote for " + (myAge - votingAge) + " years");
+            }
+            else if (myAge == votingAge)
+            {
+                Console.WriteLine("You are exactly old enough to vote! Congrats on your first time!");
+            }
+            else
+            {
+                Console.WriteLine("You're not quite old enough yet, please wait another " + (votingAge - myAge) + " years");
+            }
+
+            //An alternate (shorthand) way of writing an if else statement could be as follow:
+            int time = 20;
+            string result = (time < 18) ? "Good day" : "Good evening";
+            Console.WriteLine(result);
+
+            //The below code demonstrates the use of a switch case
+            Console.WriteLine("Please enter the menu option: ");
+            int menuChoice = Convert.ToInt32(Console.ReadLine());
+            switch(menuChoice)
+            {
+                case 1:
+                    Console.WriteLine("You have selected menu option 1");
+                    break;
+                case 2:
+                    Console.WriteLine("You have selected menu option 2");
+                    break;
+                case 3:
+                    Console.WriteLine("You have selected menu option 3");
+                    break;
+                case 4:
+                    Console.WriteLine("You have selected menu option 4");
+                    break;
+                default:
+                    Console.WriteLine("You haven't selected a menu option");
+                    break;
+            }
         }
     }
 }

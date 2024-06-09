@@ -206,6 +206,70 @@ namespace HelloWorldCSharp
                     Console.WriteLine("You haven't selected a menu option");
                     break;
             }
+
+            Console.WriteLine();
+
+            //The code below demonstrates the use case for a while loop
+            int i = 0;
+            while (i < 19)
+            {
+                Console.WriteLine(i);
+                i++;
+            }
+
+            //This is another alternative for a while loop
+            do
+            {
+                Console.WriteLine(i);
+                i++;
+            }
+            while (i < 26);
+
+            //The following code demonstrates the use of a for loop
+            for (int j = 0; j < 7; j++)
+            {
+                Console.WriteLine(j);
+            }
+
+            //The below code demonstrates a nested loop
+            for (int k = 0; k <= 5; k++)
+            {
+                Console.WriteLine("Outer Loop: " + k);
+
+                for (int l = 0; l <= 17; l++)
+                {
+                    Console.WriteLine("Inner Loop: " + l);
+                }
+            }
+
+            //The below code demonstrates the useage of 'foreach'. This is used to loop through the elements of an array.
+            string[] cars = { "Volvo", "BMW", "Ford", "Mazda", "VolksWagen" };
+            foreach (string car in cars)
+            {
+                Console.WriteLine(car);
+            }
+
+            //The 'Break' and 'Continue' terms can be used to break a loop as well as a switch case
+
+            //The following code uses 'break' to 'jump out' of a for loop if an 'if' condition is met
+            for (int n = 0; n < 11; n++)
+            {
+                if (n == 6)
+                {
+                    break;
+                }
+                Console.WriteLine(n);
+            }
+
+            //The following code uses 'continue' to skip one iteration of a loop if the condition is met, and will then continue
+            for (int m = 0; m <20; m++)
+            {
+                if (m ==13)
+                {
+                    continue;
+                }
+                Console.WriteLine(m);
+            }
         }
     }
 }

@@ -96,7 +96,27 @@ namespace HelloWorldCSharp
 
             Console.WriteLine();
 
+            /* C# uses standard programming arithmetic operators:
+             * '+' - Addition
+             * '-' - Subtraction
+             * '*' - Multiplication
+             * '/' - Division
+             * '%' - Modulus
+             * '++' - Increment
+             * '--' - Decrement */
 
+            /* C# also uses standard assignment operators, such as:
+             * '+='
+             * '-='
+             * '*='
+             * '/='
+             * '%='
+             * '&='
+             * '|='
+             * '^='
+             * '>>='
+             * '<<='
+             * */
 
         }
     }
